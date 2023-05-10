@@ -17,6 +17,19 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.theme-bg {
+    background: linear-gradient(to bottom, #000000e5, #282828);
+}
+
+.theme-btn {
+    background-color: #f80;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
 h3.description {
     font-size: 2.2rem;
     text-align: center;
@@ -35,7 +48,6 @@ h3.description {
     align-items: center;
     height: 62px;
     padding: 0 20px;
-    background: linear-gradient(to bottom, #000000e5, #282828);
 }
 
 .nav-logo img {
@@ -60,7 +72,8 @@ h3.description {
     font-weight: bold;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover,
+.dropdown:hover {
     background-color: #f80;
     color: black;
 }
@@ -137,18 +150,8 @@ section > div > aside {
     margin-top: 20px;
 }
 
-.greeting button {
-    background-color: #f80;
-    color: #000;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    padding: 10px 20px;
-    margin-top: 40px;
-}
-
-.greeting button:hover {
-    outline: 2px solid #f80;
+.theme-btn:hover {
+    background: rgba(255, 136, 0, 0.5);
     color: #fff;
     cursor: pointer;
 }
@@ -163,10 +166,12 @@ section > div > aside {
 .info h3 {
     font-size: 2.2rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .info p {
     line-height: 1.5rem;
+    text-align: center;
 }
 
 #about img {
@@ -178,37 +183,27 @@ section > div > aside {
     margin: 0 10px;
 }
 
+button.active {
+    background-color: #f80 !important;
+}
+
 /* Skills */
 
-.skill-name {
-    font-size: 1rem;
-}
-.skills-logo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px 100px;
-    padding: 50px;
-    text-align: center;
-    font-size: 1.4rem;
+th {
+    padding: 20px 0 !important;
 }
 
-.skills-logo img {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    display: block;
-    margin-bottom: 8px;
+td > img {
+    width: 75px;
+    height: 75px;
 }
 
-.rating {
+table td {
+    vertical-align: middle;
+}
+
+tbody tr:hover {
     color: #f80;
-    opacity: 0;
-    transition: 1.2s;
-}
-
-.skills-logo div:hover > .rating {
-    opacity: 1;
 }
 
 /* Skills responsive */
