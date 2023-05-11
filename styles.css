@@ -209,8 +209,8 @@ tbody tr:hover {
     color: #f80;
 }
 
-#search-skill {
-    min-width: 120px;
+.search-bar {
+    min-width: 300px;
 }
 
 /* Skills responsive */
