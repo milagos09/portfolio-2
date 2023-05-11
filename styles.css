@@ -193,6 +193,7 @@ button.active {
 
 th {
     padding: 20px 0 !important;
+    font-size: 1.4rem;
 }
 
 td > img {
@@ -206,6 +207,10 @@ table td {
 
 tbody tr:hover {
     color: #f80;
+}
+
+#search-skill {
+    min-width: 120px;
 }
 
 /* Skills responsive */

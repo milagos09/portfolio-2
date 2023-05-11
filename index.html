@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="./src/coffee_laptop.webp" type="image/x-icon" />
+        <link rel="icon" href="./images/coffee_laptop.webp" type="image/x-icon" />
         <title>Ike's Portfolio</title>
 
         <link
@@ -20,12 +20,13 @@
         ></script>
         <link rel="stylesheet" href="./styles.css" />
         <script src="./script.js" defer></script>
+        <script src="./skills.js" defer></script>
     </head>
     <body>
         <header>
             <nav class="navbar shadow theme-bg">
                 <aside class="nav-logo">
-                    <a href="./"><img src="./src/coffee_laptop.webp" alt="Logo" /></a>
+                    <a href="./"><img src="./images/coffee_laptop.webp" alt="Logo" /></a>
                 </aside>
                 <aside class="nav-menu">
                     <a href="#home">Home</a>
@@ -55,7 +56,7 @@
                         </button>
                     </aside>
                     <aside class="my-image">
-                        <img src="./src/hero-banner.webp" alt="hero-banner" />
+                        <img src="./images/hero-banner.webp" alt="hero-banner" />
                     </aside>
                 </div>
             </section>
@@ -110,7 +111,7 @@
                                         by.
                                     </p>
                                 </aside>
-                                <aside class="image"><img src="./src/isat-university.webp" /></aside>
+                                <aside class="image"><img src="./images/isat-university.webp" /></aside>
                             </div>
                         </div>
                         <div class="carousel-item" data-about-target="career">
@@ -131,7 +132,7 @@
                                         in software engineering at Accenture.
                                     </p>
                                 </aside>
-                                <aside class="image"><img src="./src/accenture.webp" /></aside>
+                                <aside class="image"><img src="./images/accenture.webp" /></aside>
                             </div>
                         </div>
                         <div class="carousel-item" data-about-target="hobbies">
@@ -150,7 +151,7 @@
                                         joy in the process of learning and growth.
                                     </p>
                                 </aside>
-                                <aside class="image"><img src="./src/hobbies.webp" /></aside>
+                                <aside class="image"><img src="./images/hobbies.webp" /></aside>
                             </div>
                         </div>
                     </div>
@@ -158,91 +159,20 @@
             </section>
             <section class="shadow" id="skills">
                 <h3 class="description">Skills</h3>
-                <div class="table-responsive">
-                    <table class="table text-light text-center">
-                        <thead>
-                            <tr>
-                                <th>Image</th>
-                                <th>Tech</th>
-                                <th>Name</th>
-                                <th>Rating</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img src="./src/html.webp" alt="html" /></td>
-                                <td>Frontend</td>
-                                <td>HTML</td>
-                                <td>★★★★★</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./src/css.webp" alt="css" /></td>
-                                <td>Frontend</td>
-                                <td>CSS</td>
-                                <td>★★</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./src/javascript.webp" alt="javascript" /></td>
-                                <td>Frontend</td>
-                                <td>JavaScript</td>
-                                <td>★★★★★</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./src/typescript.webp" alt="typescript" /></td>
-                                <td>Frontend</td>
-                                <td>TypeScript</td>
-                                <td>★★</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./src/nodejs.webp" alt="nodejs" /></td>
-                                <td>Backend</td>
-                                <td>Node.js</td>
-                                <td>★★★★★</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./src/python.webp" alt="python" /></td>
-                                <td>Backend</td>
-                                <td>Python</td>
-                                <td>★★</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./src/php.webp" alt="php" /></td>
-                                <td>Backend</td>
-                                <td>PHP</td>
-                                <td>★★</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./src/mysql.webp" alt="mysql" /></td>
-                                <td>Database</td>
-                                <td>MySQL</td>
-                                <td>★★★</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./src/postgres.webp" alt="postgres" /></td>
-                                <td>Database</td>
-                                <td>PostgreSQL</td>
-                                <td>★★★</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./src/mongodb.webp" alt="mongodb" /></td>
-                                <td>Database</td>
-                                <td>MongoDB</td>
-                                <td>★★★</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./src/vba.webp" alt="vba" /></td>
-                                <td>Automation</td>
-                                <td>VBA</td>
-                                <td>★★★</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./src/git.webp" alt="git" /></td>
-                                <td>Version Control</td>
-                                <td>Git</td>
-                                <td>★★</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="table-responsive" id="table-container">
+                    <div class="input-group my-3">
+                        <div class="input-group flex-nowrap">
+                            <input
+                                type="text"
+                                class="form-control flex-grow-1"
+                                id="search-skill"
+                                placeholder="search skills here"
+                            />
+                            <button class="btn btn-outline-secondary px-5" type="button" id="clear">Clear</button>
+                        </div>
+                    </div>
+
+                    <!-- Table placeholder -->
                 </div>
             </section>
         </main>
@@ -251,31 +181,31 @@
             <div class="socials-wrapper">
                 <div class="socials">
                     <a href="" target="_blank">
-                        <img src="./src/Facebook-logo.webp" alt="facebook" />
+                        <img src="./images/Facebook-logo.webp" alt="facebook" />
                         <span>Facebook</span>
                     </a>
                 </div>
                 <div class="socials">
                     <a href="" target="_blank">
-                        <img src="./src/linkedin-icon.webp" alt="linkedin" />
+                        <img src="./images/linkedin-icon.webp" alt="linkedin" />
                         <span>Linkedin</span>
                     </a>
                 </div>
                 <div class="socials">
                     <a href="" target="_blank">
-                        <img src="./src/github-logo.webp" alt="github" />
+                        <img src="./images/github-logo.webp" alt="github" />
                         <span>Github</span>
                     </a>
                 </div>
                 <div class="socials">
                     <a href="" target="_blank">
-                        <img src="./src/discord-mascot.webp" alt="discord" />
+                        <img src="./images/discord-mascot.webp" alt="discord" />
                         <span>Discord</span>
                     </a>
                 </div>
                 <div class="socials">
                     <a href="" target="_blank">
-                        <img src="./src/youtube-logo.webp" alt="youtube" />
+                        <img src="./images/youtube-logo.webp" alt="youtube" />
                         <span>Youtube</span>
                     </a>
                 </div>
