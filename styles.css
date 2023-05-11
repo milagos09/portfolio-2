@@ -48,6 +48,7 @@ h3.description {
     align-items: center;
     height: 62px;
     padding: 0 20px;
+    transition: 0.7s;
 }
 
 .nav-logo img {
