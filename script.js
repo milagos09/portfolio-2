@@ -25,7 +25,7 @@ function fadeNavbarOnScroll() {
     navbar.style.opacity = 0.25;
     setTimeout(() => {
         navbar.style.opacity = 1;
-    }, 2200);
+    }, 2000);
 }
 
 document.getElementById("contactMeModal").addEventListener("submit", submitMessage);
