@@ -190,7 +190,9 @@ button.active {
 }
 
 /* Skills */
-
+.search-bar {
+    margin: 0;
+}
 th {
     padding: 20px 0 !important;
     font-size: 1.4rem;
